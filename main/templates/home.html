@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>MotoBurguer</title>
+    {% load static %}
+    <link rel="icon" href="{% static 'main/img/mascot.png' %}" type="image/png">
+
+    <link rel="stylesheet" href="{% static 'main/styles.css' %}">
+
+    <!-- Tailwind CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <!-- Flowbite CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
+
+</head>
+<body>
+    <header>
+    <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="{% url 'home' %}" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="{% static 'main/img/mascot.png' %}" style="height: 3em;" class="h-8" alt="Flowbite Logo">
+            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white" style="font-family: 'Capuche';">MotoBurguer</span>
+        </a>
+        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+          <a href="https://play.google.com/store/apps/details?id=com.ubercab.eats&hl=es" type="button" class="order-now-btn text-white bg-red-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" style="background-color: darkgoldenrod; font-family: 'Capuche';">Pedir ahora</a>
+            <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+              </svg>
+          </button>
+        </div>
+        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+          <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <li>
+              <a href="{% url 'home' %}" class="block py-2 px-3 text-white bg-white-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page" style="font-family: 'Capuche'; font-size: x-large; color: darkgoldenrod;">Inicio</a>
+            </li>
+            <li>
+              <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 hover:text-darkgoldenrod md:hover:bg-transparent md:p-0 md:dark:hover:text-darkgoldenrod dark:text-white dark:hover:bg-gray-700 dark:hover:text-darkgoldenrod md:dark:hover:bg-transparent dark:border-gray-700" style="font-family: 'Capuche'; font-size: x-large;">Menu</a>
+            </li>
+            <li>
+              <a href="#separator1" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 hover:text-darkgoldenrod md:hover:bg-transparent md:p-0 md:dark:hover:text-darkgoldenrod dark:text-white dark:hover:bg-gray-700 dark:hover:text-darkgoldenrod md:dark:hover:bg-transparent dark:border-gray-700" style="font-family: 'Capuche'; font-size: x-large;">Acerca de nosotros</a>
+            </li>
+            <li>
+              <a href="#final-text" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 hover:text-darkgoldenrod md:hover:bg-transparent md:p-0 md:dark:hover:text-darkgoldenrod dark:text-white dark:hover:bg-gray-700 dark:hover:text-darkgoldenrod md:dark:hover:bg-transparent dark:border-gray-700" style="font-family: 'Capuche'; font-size: x-large;">Contacto</a>
+            </li>
+          </ul>
+        </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+        <!-- Video background -->
+        <div class="bg-video">
+            <video autoplay muted loop>
+                <source src="{% static 'main/videos/machaka.mp4' %}" type="video/mp4" media="(min-width: 800px)">
+                <source src="{% static 'main/videos/vertical_machaka.mp4' %}" type="video/mp4" media="(max-width: 799px)">
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+        <!-- Menu logo -->
+        <div class="sticky-logo">
+          <a href="#">
+            <img src="{% static 'main/img/menu-icon.png' %}" alt="Rotating Logo" class="rotating">
+            <img src="{% static 'main/img/mascot.png' %}" alt="Static Center Logo" class="static">
+          </a>
+        </div>
+        <!-- Separator -->
+        <div>
+          <img src="{% static 'main/img/separator.jpg' %}" id="separator1" style="width: 100%;">
+        </div>
+        <!-- Que es SmashBurguer-->
+        <div class="container-quienes-somos" style="padding: 10px;">
+          <div class="left">
+            <img id="mascot" src="{% static 'main/img/mascot.png' %}" alt="Mascota">
+          </div>
+          <div class="right">
+            <p id="title">¿Qué significa Smash Burguer?</p>
+            <br>
+            <p id="text">Aplastamos nuestras hamburguesas sobre la plancha,</p>
+            <p id="text">forzando su caramelización y esa costrita que tanto te gusta</p>
+            <br id="final-text">
+            <p id="text">Por eso nuestras carnes solo tienen un punto...</p>
+            <b id="text">¡La puesta a punto!</b>
+          </div>
+        </div>
+        <!-- Separator -->
+        <div>
+          <img src="{% static 'main/img/separator.jpg' %}" id="separator2" style="width: 100%;">
+        </div>
+        <!-- Contact -->
+        <div class="contact-container">
+          <div class="contact-left">
+            <b style="font-family: 'Capuche'; font-size: large;">Horario</b>
+            <p id="text">Lunes a Viernes: 9:00 AM - 8:00 PM</p>
+            <p id="text">Sábado: 10:00 AM - 6:00 PM</p>
+            <p id="text">Domingo: Cerrado</p>
+          </div>
+          <div class="contact-right">
+            <b style="font-family: 'Capuche'; font-size: large;">Ubicación</b>
+            <p id="text">Calle Arfe, 7</p>
+            <p id="text">Sevilla, España</p>
+            <p id="text">Teléfono: <a href="tel:+34615294595"> +34 615294595</a></p>
+          </div>
+        </div>
+      
+        <!-- Mapa de Google -->
+        <iframe class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3170.156828815661!2d-5.998501587837556!3d37.38612327196952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126c10d21c483b%3A0x992a885e5f54d190!2sMoto%20Hobby!5e0!3m2!1ses!2ses!4v1722364160706!5m2!1ses!2ses"
+          width="100%" 
+          height="450" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          title="Google Maps"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+
+        <!-- Footer -->
+        <div>
+          <img src="{% static 'main/img/footer.jpg' %}">
+        </div>
+
+    </main>    
+
+
+<script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+
+</body>
+</html>
