@@ -1,0 +1,20 @@
+/* MotoBurguer/static/main/styles.css */
+
+@font-face {
+    font-family: 'Capuche';
+    src: url("/static/main/fonts/Capuche.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+main {
+    padding-top: 68px; /* Ajusta este valor según la altura de tu navbar */
+  }
+
+/* Media query para pantallas menores de 1000px */
+@media (max-width: 1000px) {
+    .order-now-btn {
+        font-size: large !important;
+    }
+}
+

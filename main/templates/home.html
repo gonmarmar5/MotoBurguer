@@ -38,7 +38,7 @@
               <a href="{% url 'home' %}" class="block py-2 px-3 text-white bg-white-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page" style="font-family: 'Capuche'; font-size: x-large; color: darkgoldenrod;">Inicio</a>
             </li>
             <li>
-              <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 hover:text-darkgoldenrod md:hover:bg-transparent md:p-0 md:dark:hover:text-darkgoldenrod dark:text-white dark:hover:bg-gray-700 dark:hover:text-darkgoldenrod md:dark:hover:bg-transparent dark:border-gray-700" style="font-family: 'Capuche'; font-size: x-large;">Menu</a>
+              <a href="{% url 'menu' %}" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 hover:text-darkgoldenrod md:hover:bg-transparent md:p-0 md:dark:hover:text-darkgoldenrod dark:text-white dark:hover:bg-gray-700 dark:hover:text-darkgoldenrod md:dark:hover:bg-transparent dark:border-gray-700" style="font-family: 'Capuche'; font-size: x-large;">Menu</a>
             </li>
             <li>
               <a href="#separator1" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 hover:text-darkgoldenrod md:hover:bg-transparent md:p-0 md:dark:hover:text-darkgoldenrod dark:text-white dark:hover:bg-gray-700 dark:hover:text-darkgoldenrod md:dark:hover:bg-transparent dark:border-gray-700" style="font-family: 'Capuche'; font-size: x-large;">Acerca de nosotros</a>
@@ -62,7 +62,7 @@
         </div>
         <!-- Menu logo -->
         <div class="sticky-logo">
-          <a href="#">
+          <a href="{% url 'menu' %}">
             <img src="{% static 'main/img/menu-icon.png' %}" alt="Rotating Logo" class="rotating">
             <img src="{% static 'main/img/mascot.png' %}" alt="Static Center Logo" class="static">
           </a>
