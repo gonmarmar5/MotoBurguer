@@ -14,7 +14,7 @@ main {
 /* Media query para pantallas menores de 1000px */
 @media (max-width: 1000px) {
     .order-now-btn {
-        font-size: large !important;
+        font-size: medium !important;
     }
 }
 
