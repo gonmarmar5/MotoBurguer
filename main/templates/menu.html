@@ -20,10 +20,10 @@
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="{% url 'home' %}" class="flex items-center space-x-3 rtl:space-x-reverse">
             <img src="{% static 'main/img/mascot.png' %}" style="height: 3em;" class="h-8" alt="Flowbite Logo">
-            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white" style="font-family: 'Capuche';">MotoBurguer</span>
+            <span id="brand_name" class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">MotoBurguer</span>
         </a>
         <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-          <a href="https://play.google.com/store/apps/details?id=com.ubercab.eats&hl=es" type="button" class="order-now-btn text-white bg-red-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" style="background-color: darkgoldenrod; font-family: 'Capuche'; font-size: x-large;">Pedir ahora</a>
+          <a href="https://play.google.com/store/apps/details?id=com.ubercab.eats&hl=es" type="button" class="order-now-btn text-white bg-red-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" style="background-color: darkgoldenrod; font-family: 'Capuche'; font-size: x-large;">Pedir ahora</a>
             <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
               <span class="sr-only">Open main menu</span>
               <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
@@ -56,13 +56,13 @@
             <!-- Tarjeta 1 -->
             <div class="max-w-lg mx-auto bg-white rounded-lg">
                 <div class="relative">
-                    <img src="{% static 'main/img/burguer1.png' %}" alt="Hamburguesa 1" class="rounded-t-xl rounded-b-xl w-full h-82 object-cover">
+                    <img src="{% static 'main/img/vespino.png' %}" alt="Hamburguesa 1" class="rounded-t-xl rounded-b-xl w-full h-82 object-cover">
                     <div class="absolute inset-0 flex items-end justify-center pb-2"> <!-- Cambiado -->
-                      <h5 class="text-xl font-bold text-white bg-black bg-opacity-50 px-4 py-2 rounded-lg" style="font-family: 'Capuche'; font-size: xx-large;">AMERICAN SMASH</h5>
+                      <h5 class="text-xl font-bold text-white bg-black bg-opacity-50 px-4 py-2 rounded-lg" style="font-family: 'Capuche'; font-size: xx-large;">VESPINO</h5>
                     </div>           
                 </div>
                 <div class="p-8">
-                  <p class="text-gray-700" style="text-align: center; font-family: 'Courier New', Courier, monospace;">Pan brioche, 3 carnes smash de 90g, triple queso cheddar, cebolla salteada, mermelada de bacon casera y salsa americana. 16.50€</p>
+                  <p class="text-gray-700" style="text-align: center; font-family: 'Courier New', Courier, monospace;">Pan brioche, 1 carnes smash de 90g, 1 queso cheddar. 5.90€</p>
                   <div class="flex justify-center mt-4"> <!-- Contenedor para centrar las imágenes -->
                     <img src="{% static 'main/img/gluten.png' %}" alt="Alérgeno 1" class="w-12 h-12 mx-2"> <!-- Cambia el tamaño según sea necesario -->
                     <img src="{% static 'main/img/mostaza.png' %}" alt="Alérgeno 2" class="w-12 h-12 mx-2">
@@ -76,13 +76,13 @@
             <!-- Tarjeta 2 -->
             <div class="max-w-lg mx-auto bg-white rounded-lg">
                 <div class="relative">
-                    <img src="{% static 'main/img/burguer2.png' %}" alt="Hamburguesa 2" class="rounded-t-xl rounded-b-xl w-full h-82 object-cover">
+                    <img src="{% static 'main/img/vespa.png' %}" alt="Hamburguesa 2" class="rounded-t-xl rounded-b-xl w-full h-82 object-cover">
                     <div class="absolute inset-0 flex items-end justify-center pb-2"> <!-- Cambiado -->
-                      <h5 class="text-xl font-bold text-white bg-black bg-opacity-50 px-4 py-2 rounded-lg" style="font-family: 'Capuche'; font-size: xx-large;">TRUFADA</h5>
+                      <h5 class="text-xl font-bold text-white bg-black bg-opacity-50 px-4 py-2 rounded-lg" style="font-family: 'Capuche'; font-size: xx-large;">VESPA</h5>
                     </div> 
                 </div>
                 <div class="p-8">
-                  <p class="text-gray-700" style="text-align: center; font-family: 'Courier New', Courier, monospace;">Pan brioche, 3 carnes smash de 90g, cebolla salteada, queso ahumado, patatas pajas, salsa mayo spicy y miel ligeramente picante. 16.50€</p>
+                  <p class="text-gray-700" style="text-align: center; font-family: 'Courier New', Courier, monospace;">Pan brioche, 2 carnes smash de 90g, 2 lonchas queso cheddar, Salsa 747. 8.90€</p>
                   <div class="flex justify-center mt-4"> <!-- Contenedor para centrar las imágenes -->
                     <img src="{% static 'main/img/gluten.png' %}" alt="Alérgeno 1" class="w-12 h-12 mx-2"> <!-- Cambia el tamaño según sea necesario -->
                     <img src="{% static 'main/img/mostaza.png' %}" alt="Alérgeno 2" class="w-12 h-12 mx-2">
@@ -96,13 +96,13 @@
             <!-- Tarjeta 3 -->
             <div class="max-w-lg mx-auto bg-white rounded-lg">
                 <div class="relative">
-                    <img src="{% static 'main/img/burguer3.png' %}" alt="Hamburguesa 3" class="rounded-t-xl rounded-b-xl w-full h-82 object-cover">
+                    <img src="{% static 'main/img/nmax.png' %}" alt="Hamburguesa 3" class="rounded-t-xl rounded-b-xl w-full h-82 object-cover">
                     <div class="absolute inset-0 flex items-end justify-center pb-2"> <!-- Cambiado -->
-                      <h5 class="text-xl font-bold text-white bg-black bg-opacity-50 px-4 py-2 rounded-lg" style="font-family: 'Capuche'; font-size: xx-large;">HONEY SPICY</h5>
+                      <h5 class="text-xl font-bold text-white bg-black bg-opacity-50 px-4 py-2 rounded-lg" style="font-family: 'Capuche'; font-size: xx-large;">NMAX</h5>
                     </div> 
                 </div>
                 <div class="p-8">
-                    <p class="text-gray-700" style="text-align: center; font-family: 'Courier New', Courier, monospace;">Pan brioche, 2 carnes smash de 90g, champiñones salteados con cebolla, queso parmesano, aceite de trufa y mayonesa trufada. 15.00€</p>
+                    <p class="text-gray-700" style="text-align: center; font-family: 'Courier New', Courier, monospace;">Pan brioche, 2 carnes smash de 90g, lechuga, tomate, cebolla fresca, pepinillo y una deliciosa Mayo-Bacon. 9.90€</p>
                     <div class="flex justify-center mt-4"> <!-- Contenedor para centrar las imágenes -->
                       <img src="{% static 'main/img/gluten.png' %}" alt="Alérgeno 1" class="w-12 h-12 mx-2"> <!-- Cambia el tamaño según sea necesario -->
                       <img src="{% static 'main/img/mostaza.png' %}" alt="Alérgeno 2" class="w-12 h-12 mx-2">
@@ -116,13 +116,13 @@
             <!-- Tarjeta 4 -->
             <div class="max-w-lg mx-auto bg-white rounded-lg">
               <div class="relative">
-                  <img src="{% static 'main/img/burguer1.png' %}" alt="Hamburguesa 1" class="rounded-t-xl rounded-b-xl w-full h-82 object-cover">
+                  <img src="{% static 'main/img/harley.png' %}" alt="Hamburguesa 1" class="rounded-t-xl rounded-b-xl w-full h-82 object-cover">
                   <div class="absolute inset-0 flex items-end justify-center pb-2"> <!-- Cambiado -->
-                    <h5 class="text-xl font-bold text-white bg-black bg-opacity-50 px-4 py-2 rounded-lg" style="font-family: 'Capuche'; font-size: xx-large;">AMERICAN SMASH</h5>
+                    <h5 class="text-xl font-bold text-white bg-black bg-opacity-50 px-4 py-2 rounded-lg" style="font-family: 'Capuche';color: darkgoldenrod; font-size: xx-large;">HARLEY</h5>
                   </div>           
               </div>
               <div class="p-8">
-                <p class="text-gray-700" style="text-align: center; font-family: 'Courier New', Courier, monospace;">Pan brioche, 3 carnes smash de 90g, triple queso cheddar, cebolla salteada, mermelada de bacon casera y salsa americana. 16.50€</p>
+                <p class="text-gray-700" style="text-align: center; font-family: 'Courier New', Courier, monospace;">Pan brioche, 2 carnes smash de 90g, doble de onion bites, bacon y salsa 747. 9.90€</p>
                 <div class="flex justify-center mt-4"> <!-- Contenedor para centrar las imágenes -->
                   <img src="{% static 'main/img/gluten.png' %}" alt="Alérgeno 1" class="w-12 h-12 mx-2"> <!-- Cambia el tamaño según sea necesario -->
                   <img src="{% static 'main/img/mostaza.png' %}" alt="Alérgeno 2" class="w-12 h-12 mx-2">
@@ -138,11 +138,11 @@
               <div class="relative">
                   <img src="{% static 'main/img/burguer2.png' %}" alt="Hamburguesa 2" class="rounded-t-xl rounded-b-xl w-full h-82 object-cover">
                   <div class="absolute inset-0 flex items-end justify-center pb-2"> <!-- Cambiado -->
-                    <h5 class="text-xl font-bold text-white bg-black bg-opacity-50 px-4 py-2 rounded-lg" style="font-family: 'Capuche'; font-size: xx-large;">TRUFADA</h5>
+                    <h5 class="text-xl font-bold text-white bg-black bg-opacity-50 px-4 py-2 rounded-lg" style="font-family: 'Capuche'; font-size: xx-large;">TWIN</h5>
                   </div> 
               </div>
               <div class="p-8">
-                <p class="text-gray-700" style="text-align: center; font-family: 'Courier New', Courier, monospace;">Pan brioche, 3 carnes smash de 90g, cebolla salteada, queso ahumado, patatas pajas, salsa mayo spicy y miel ligeramente picante. 16.50€</p>
+                <p class="text-gray-700" style="text-align: center; font-family: 'Courier New', Courier, monospace;">Pan brioche, 2 carnes smash de 90g, 2 bacon, 2 quesos y salsa Jack Daniels BBQ. 9.90€</p>
                 <div class="flex justify-center mt-4"> <!-- Contenedor para centrar las imágenes -->
                   <img src="{% static 'main/img/gluten.png' %}" alt="Alérgeno 1" class="w-12 h-12 mx-2"> <!-- Cambia el tamaño según sea necesario -->
                   <img src="{% static 'main/img/mostaza.png' %}" alt="Alérgeno 2" class="w-12 h-12 mx-2">
@@ -156,13 +156,13 @@
             <!-- Tarjeta 6 -->
             <div class="max-w-lg mx-auto bg-white rounded-lg">
               <div class="relative">
-                  <img src="{% static 'main/img/burguer3.png' %}" alt="Hamburguesa 3" class="rounded-t-xl rounded-b-xl w-full h-82 object-cover">
+                  <img src="{% static 'main/img/goldwing.png' %}" alt="Hamburguesa 3" class="rounded-t-xl rounded-b-xl w-full h-82 object-cover">
                   <div class="absolute inset-0 flex items-end justify-center pb-2"> <!-- Cambiado -->
-                    <h5 class="text-xl font-bold text-white bg-black bg-opacity-50 px-4 py-2 rounded-lg" style="font-family: 'Capuche'; font-size: xx-large;">HONEY SPICY</h5>
+                    <h5 class="text-xl font-bold text-white bg-black bg-opacity-50 px-4 py-2 rounded-lg" style="font-family: 'Capuche'; font-size: xx-large;">GOLDWING</h5>
                   </div> 
               </div>
               <div class="p-8">
-                  <p class="text-gray-700" style="text-align: center; font-family: 'Courier New', Courier, monospace;">Pan brioche, 2 carnes smash de 90g, champiñones salteados con cebolla, queso parmesano, aceite de trufa y mayonesa trufada. 15.00€</p>
+                  <p class="text-gray-700" style="text-align: center; font-family: 'Courier New', Courier, monospace;">Pan brioche, 3 carnes smash de 90g, onion bites, bacon, 2 lonchas de queso cheddar, pepinillos y doble de nuestra salsa 747. 11.90€</p>
                   <div class="flex justify-center mt-4"> <!-- Contenedor para centrar las imágenes -->
                     <img src="{% static 'main/img/gluten.png' %}" alt="Alérgeno 1" class="w-12 h-12 mx-2"> <!-- Cambia el tamaño según sea necesario -->
                     <img src="{% static 'main/img/mostaza.png' %}" alt="Alérgeno 2" class="w-12 h-12 mx-2">
@@ -176,13 +176,13 @@
             <!-- Tarjeta 7 -->
             <div class="max-w-lg mx-auto bg-white rounded-lg">
               <div class="relative">
-                  <img src="{% static 'main/img/burguer1.png' %}" alt="Hamburguesa 1" class="rounded-t-xl rounded-b-xl w-full h-82 object-cover">
+                  <img src="{% static 'main/img/zip.png' %}" alt="Hamburguesa 1" class="rounded-t-xl rounded-b-xl w-full h-82 object-cover">
                   <div class="absolute inset-0 flex items-end justify-center pb-2"> <!-- Cambiado -->
-                    <h5 class="text-xl font-bold text-white bg-black bg-opacity-50 px-4 py-2 rounded-lg" style="font-family: 'Capuche'; font-size: xx-large;">AMERICAN SMASH</h5>
+                    <h5 class="text-xl font-bold text-white bg-black bg-opacity-50 px-4 py-2 rounded-lg" style="font-family: 'Capuche'; font-size: xx-large;">ZIP</h5>
                   </div>           
               </div>
               <div class="p-8">
-                <p class="text-gray-700" style="text-align: center; font-family: 'Courier New', Courier, monospace;">Pan brioche, 3 carnes smash de 90g, triple queso cheddar, cebolla salteada, mermelada de bacon casera y salsa americana. 16.50€</p>
+                <p class="text-gray-700" style="text-align: center; font-family: 'Courier New', Courier, monospace;">Pan brioche, 1 carnes smash de pollo y bacon 90g, onion bites y nuestra deliciosa Mayo-Bacon. 5.90€</p>
                 <div class="flex justify-center mt-4"> <!-- Contenedor para centrar las imágenes -->
                   <img src="{% static 'main/img/gluten.png' %}" alt="Alérgeno 1" class="w-12 h-12 mx-2"> <!-- Cambia el tamaño según sea necesario -->
                   <img src="{% static 'main/img/mostaza.png' %}" alt="Alérgeno 2" class="w-12 h-12 mx-2">
@@ -196,13 +196,13 @@
           <!-- Tarjeta 8 -->
          <div class="max-w-lg mx-auto bg-white rounded-lg">
             <div class="relative">
-                <img src="{% static 'main/img/burguer2.png' %}" alt="Hamburguesa 2" class="rounded-t-xl rounded-b-xl w-full h-82 object-cover">
+                <img src="{% static 'main/img/Cbr.png' %}" alt="Hamburguesa 2" class="rounded-t-xl rounded-b-xl w-full h-82 object-cover">
                 <div class="absolute inset-0 flex items-end justify-center pb-2"> <!-- Cambiado -->
-                  <h5 class="text-xl font-bold text-white bg-black bg-opacity-50 px-4 py-2 rounded-lg" style="font-family: 'Capuche'; font-size: xx-large;">TRUFADA</h5>
+                  <h5 class="text-xl font-bold text-white bg-black bg-opacity-50 px-4 py-2 rounded-lg" style="font-family: 'Capuche';color:darkgoldenrod; font-size: xx-large;">CBR</h5>
                 </div> 
             </div>
             <div class="p-8">
-              <p class="text-gray-700" style="text-align: center; font-family: 'Courier New', Courier, monospace;">Pan brioche, 3 carnes smash de 90g, cebolla salteada, queso ahumado, patatas pajas, salsa mayo spicy y miel ligeramente picante. 16.50€</p>
+              <p class="text-gray-700" style="text-align: center; font-family: 'Courier New', Courier, monospace;">Pan brioche, 1 carnes smash de pollo y bacon 90g, bacon bites y salsa Relish. 8.90€</p>
               <div class="flex justify-center mt-4"> <!-- Contenedor para centrar las imágenes -->
                 <img src="{% static 'main/img/gluten.png' %}" alt="Alérgeno 1" class="w-12 h-12 mx-2"> <!-- Cambia el tamaño según sea necesario -->
                 <img src="{% static 'main/img/mostaza.png' %}" alt="Alérgeno 2" class="w-12 h-12 mx-2">
@@ -247,7 +247,7 @@
                   </div>           
               </div>
               <div class="p-8">
-                <p class="text-gray-700" style="text-align: center; font-family: 'Courier New', Courier, monospace;">Cualquier hamburguesa + Patatas + Bebida. 12.00€ <br> Goldwing (+€1.00)</p>
+                <p class="text-gray-700" style="text-align: center; font-family: 'Courier New', Courier, monospace;">Cualquier hamburguesa + Patatas + Bebida. 13.00€ <br> Goldwing (+€1.00)</p>
                 <div class="flex justify-center mt-4"> <!-- Contenedor para centrar las imágenes -->
                   <img src="{% static 'main/img/gluten.png' %}" alt="Alérgeno 1" class="w-12 h-12 mx-2"> <!-- Cambia el tamaño según sea necesario -->
                   <img src="{% static 'main/img/mostaza.png' %}" alt="Alérgeno 2" class="w-12 h-12 mx-2">
@@ -281,7 +281,7 @@
           <!-- Tarjeta 12 -->
           <div class="max-w-lg mx-auto bg-white rounded-lg">
             <div class="relative">
-                <img src="{% static 'main/img/bebidas2.png' %}" alt="Hamburguesa 1" class="rounded-t-xl rounded-b-xl w-full h-82 object-cover">          
+                <img src="{% static 'main/img/bebidas.png' %}" alt="Hamburguesa 1" class="rounded-t-xl rounded-b-xl w-full h-82 object-cover">          
             </div>
             <div class="p-8">
               <p class="text-gray-700" style="text-align: center; font-family: 'Courier New', Courier, monospace;"></p>
@@ -291,7 +291,7 @@
         </div>
       </div>
 
-      <div style="height: 100px;"></div>
+      <div class="last_block" style="display: none; height: 400px;"></div>
       <div>
         <img src="{% static 'main/img/footer.jpg' %}">
       </div>

@@ -10,11 +10,21 @@
 main {
     padding-top: 68px; /* Ajusta este valor según la altura de tu navbar */
   }
-
+#brand_name{
+    font-family: 'Capuche';
+    font-size: x-large;
+}
 /* Media query para pantallas menores de 1000px */
 @media (max-width: 1000px) {
     .order-now-btn {
         font-size: medium !important;
+    }
+    #brand_name{
+        font-family: 'Capuche' !important;
+        font-size: medium;
+    }
+    .last_block{
+        display: block;
     }
 }
 
