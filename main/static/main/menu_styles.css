@@ -14,6 +14,28 @@ main {
     font-family: 'Capuche';
     font-size: x-large;
 }
+
+.footer-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  
+  .footer-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .footer-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 1rem; /* Ajusta el padding según tus necesidades */
+  }
+
 /* Media query para pantallas menores de 1000px */
 @media (max-width: 1000px) {
     .order-now-btn {
@@ -25,6 +47,9 @@ main {
     }
     .last_block{
         display: block;
+    }
+    #footer_copy{
+        font-size: 5px;
     }
 }
 

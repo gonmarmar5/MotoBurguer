@@ -136,6 +136,28 @@ align-items: center;
     font-family: 'Courier New', Courier, monospace;
   }
 
+  .footer-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  
+  .footer-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .footer-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 1rem; /* Ajusta el padding según tus necesidades */
+  }
+  
+
 /* Media query para pantallas menores de 1000px */
 @media (max-width: 1000px) {
     #brand_name{
@@ -163,6 +185,9 @@ align-items: center;
         }
     .map{
         height: 200px;
+    }
+    #footer_copy{
+        font-size: 5px;
     }
 }
 
